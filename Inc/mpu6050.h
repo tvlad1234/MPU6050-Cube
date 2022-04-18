@@ -33,10 +33,10 @@ typedef enum
 uint8_t mpuBegin(I2C_HandleTypeDef *i2cdev);
 
 void setMPUFilterBandwidth(mpu6050_bandwidth_t bw);
-void setAccelRange(mpu6050_accel_range_t accel_range);
-void setGyroRange(mpu6050_gyro_range_t gyro_range);
+void setMPUAccelRange(mpu6050_accel_range_t accel_range);
+void setMPUGyroRange(mpu6050_gyro_range_t gyro_range);
 
-void readAccel(float *gx, float *gy, float *gz);
-void readGyro(float *gx, float *gy, float *gz);
+void readMPUAccel(float *gx, float *gy, float *gz);
+void readMPUGyro(float *gx, float *gy, float *gz);
 
 #endif /* _MPU6050_H */
